@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 27-12-2022 a las 21:51:27
+-- Tiempo de generación: 28-12-2022 a las 17:24:22
 -- Versión del servidor: 10.3.37-MariaDB-0ubuntu0.20.04.1
 -- Versión de PHP: 7.4.3
 
@@ -29517,7 +29517,7 @@ INSERT INTO `c_clave_producto_servicio` (`clave`, `descripcion`) VALUES
 ('50321564', 'Manzana pink lady seca'),
 ('50321565', 'Manzana pippin seca'),
 ('50321566', 'Manzana pitmaston pineapple seca'),
-('50321567', 'Manzana pomme d\api seca'),
+('50321567', 'Manzana pomme d\'api seca'),
 ('50321568', 'Manzana prime dorado seca'),
 ('50321569', 'Manzana roja astrakhan seca'),
 ('50321570', 'Manzana roja boscoop seca'),
@@ -43180,7 +43180,6 @@ INSERT INTO `c_clave_producto_servicio` (`clave`, `descripcion`) VALUES
 ('50464805', 'Champiñón cremini enlatado o envasado'),
 ('50464806', 'Champiñón enoki enlatado o envasado'),
 ('50464807', 'Champiñón puercoespín enlatado o envasado');
-
 INSERT INTO `c_clave_producto_servicio` (`clave`, `descripcion`) VALUES
 ('50464808', 'Champiñón gallina del bosque enlatado o envasado'),
 ('50464809', 'Champiñón langosta enlatado o envasado'),
@@ -45183,7 +45182,6 @@ INSERT INTO `c_clave_producto_servicio` (`clave`, `descripcion`) VALUES
 ('51141602', 'Clorhidrato de doxepina'),
 ('51141603', 'Pamoato de imipramina'),
 ('51141604', 'Mirtazapina');
-
 INSERT INTO `c_clave_producto_servicio` (`clave`, `descripcion`) VALUES
 ('51141605', 'Hidrocloruro de paroxetina'),
 ('51141606', 'Clorhidrato de trazodona'),
@@ -45200,7 +45198,7 @@ INSERT INTO `c_clave_producto_servicio` (`clave`, `descripcion`) VALUES
 ('51141617', 'Bromhidrato de citalopram'),
 ('51141618', 'Clorhidrato de fluoxetina'),
 ('51141619', 'Hidrocloruro de sertralina'),
-('51141620', 'Mosto de st\john'),
+('51141620', 'Mosto de st\'john'),
 ('51141621', 'Clorhidrato de imipramina'),
 ('51141622', 'Isocarboxazida'),
 ('51141623', 'Clorhidrato de caprotilina'),
@@ -55281,36 +55279,6 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `password_resets`
---
-
-CREATE TABLE `password_resets` (
-  `email` varchar(255) NOT NULL,
-  `token` varchar(255) NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `personal_access_tokens`
---
-
-CREATE TABLE `personal_access_tokens` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `tokenable_type` varchar(255) NOT NULL,
-  `tokenable_id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `token` varchar(64) NOT NULL,
-  `abilities` text DEFAULT NULL,
-  `last_used_at` timestamp NULL DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
 -- Estructura de tabla para la tabla `users`
 --
 
@@ -55399,20 +55367,6 @@ ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `password_resets`
---
-ALTER TABLE `password_resets`
-  ADD KEY `password_resets_email_index` (`email`);
-
---
--- Indices de la tabla `personal_access_tokens`
---
-ALTER TABLE `personal_access_tokens`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `personal_access_tokens_token_unique` (`token`),
-  ADD KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`);
-
---
 -- Indices de la tabla `users`
 --
 ALTER TABLE `users`
@@ -55446,12 +55400,6 @@ ALTER TABLE `failed_jobs`
 --
 ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT de la tabla `personal_access_tokens`
---
-ALTER TABLE `personal_access_tokens`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
