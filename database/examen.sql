@@ -29517,7 +29517,7 @@ INSERT INTO `c_clave_producto_servicio` (`clave`, `descripcion`) VALUES
 ('50321564', 'Manzana pink lady seca'),
 ('50321565', 'Manzana pippin seca'),
 ('50321566', 'Manzana pitmaston pineapple seca'),
-('50321567', 'Manzana pomme d\'api seca'),
+('50321567', 'Manzana pomme d\api seca'),
 ('50321568', 'Manzana prime dorado seca'),
 ('50321569', 'Manzana roja astrakhan seca'),
 ('50321570', 'Manzana roja boscoop seca'),
@@ -43180,6 +43180,7 @@ INSERT INTO `c_clave_producto_servicio` (`clave`, `descripcion`) VALUES
 ('50464805', 'Champiñón cremini enlatado o envasado'),
 ('50464806', 'Champiñón enoki enlatado o envasado'),
 ('50464807', 'Champiñón puercoespín enlatado o envasado');
+
 INSERT INTO `c_clave_producto_servicio` (`clave`, `descripcion`) VALUES
 ('50464808', 'Champiñón gallina del bosque enlatado o envasado'),
 ('50464809', 'Champiñón langosta enlatado o envasado'),
@@ -45182,6 +45183,7 @@ INSERT INTO `c_clave_producto_servicio` (`clave`, `descripcion`) VALUES
 ('51141602', 'Clorhidrato de doxepina'),
 ('51141603', 'Pamoato de imipramina'),
 ('51141604', 'Mirtazapina');
+
 INSERT INTO `c_clave_producto_servicio` (`clave`, `descripcion`) VALUES
 ('51141605', 'Hidrocloruro de paroxetina'),
 ('51141606', 'Clorhidrato de trazodona'),
@@ -45198,7 +45200,7 @@ INSERT INTO `c_clave_producto_servicio` (`clave`, `descripcion`) VALUES
 ('51141617', 'Bromhidrato de citalopram'),
 ('51141618', 'Clorhidrato de fluoxetina'),
 ('51141619', 'Hidrocloruro de sertralina'),
-('51141620', 'Mosto de st\'john'),
+('51141620', 'Mosto de st\john'),
 ('51141621', 'Clorhidrato de imipramina'),
 ('51141622', 'Isocarboxazida'),
 ('51141623', 'Clorhidrato de caprotilina'),
